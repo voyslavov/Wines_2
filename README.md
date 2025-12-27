@@ -6,3 +6,5 @@ New
 
 Second commit
 
+Dependences:
+mothur v.1.44.1
