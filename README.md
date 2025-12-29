@@ -1,10 +1,12 @@
-Testing: How to use git and GitHub
+# Testing: How to use git and GitHub
 
-Author: Ts Voyslavov
+**Author:** Ts Voyslavov
 
-New
+New Text text TextText text TextText **text** TextText text TextText text TextText text TextText
 
-Second commit
+text Text
 
-Dependences:
-mothur v.1.44.1
+Second commit text ***TextText*** text *TextText* text TextText text TextText text TextText text
+
+### Dependences:  
+* [mothur v.1.44.1](https://github.com/mothur/mothur/releases/tag/v.1.44.1)
