@@ -8,5 +8,7 @@
 
 archive=$1
 
-wget -nc -P data/raw/ https://rrndb.umms.med.umich.edu/downloads/"$archive".zip
+wget -P data/raw/ -nc https://rrndb.umms.med.umich.edu/downloads/"$archive".zip
 unzip -n -d data/raw/ data/raw/"$archive".zip
+
+#touch data/raw/"$archive"
