@@ -6,9 +6,15 @@
 #
 #
 
-archive=$1
+target=$1
 
-wget -P data/raw/ -nc https://rrndb.umms.med.umich.edu/downloads/"$archive".zip
-unzip -n -d data/raw/ data/raw/"$archive".zip
+# gives file name
+filename=`echo $target | sed "s/.*\///"`
 
-#touch data/raw/"$archive"
+# gives path to file
+path=`echo $target | sed -E "s/(.*\/).*/\1/"`
+
+wget -P "$path" -nc https://rrndb.umms.med.umich.edu/downloads/"$filename".zip
+unzip -n -d "$path" "$target".zip
+
+touch "$target"
